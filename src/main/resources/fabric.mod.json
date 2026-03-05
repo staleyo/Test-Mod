@@ -18,6 +18,9 @@
 		"main": [
 			"net.leon.testmod.TestMod"
 		],
+		"fabric-datagen": [
+			"net.leon.testmod.TestModDataGenerator"
+		],
 		"client": [
 			"net.leon.testmod.TestModClient"
 		]
