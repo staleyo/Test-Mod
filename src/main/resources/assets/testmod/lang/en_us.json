@@ -8,5 +8,9 @@
   "item.testmod.raw_lead": "Raw Lead",
   "item.testmod.lead_ingot": "Lead Ingot",
   "item.testmod.raw_tungsten": "Raw Tungsten",
-  "item.testmod.tungsten_ingot": "Tungsten Ingot"
+  "item.testmod.tungsten_ingot": "Tungsten Ingot",
+
+
+  "block.testmod.tin_ore": "Tin Ore",
+  "block.testmod.deepslate_tin_ore": "Deepslate Tin Ore"
 }
