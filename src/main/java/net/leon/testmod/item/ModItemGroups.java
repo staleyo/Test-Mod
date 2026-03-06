@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.TIN_INGOT))
                     .displayName(Text.translatable("itemgroup.testmod.test_mod"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BRONZE_INGOT);
                         entries.add(ModItems.RAW_TIN);
                         entries.add(ModItems.RAW_TUNGSTEN);
                         entries.add(ModItems.RAW_LEAD);

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    { "item": "testmod:tin_ingot" },
+    { "item": "minecraft:copper_ingot" },
+    { "item": "minecraft:copper_ingot" },
+    { "item": "minecraft:copper_ingot" }
+  ],
+  "result": {
+    "count": 4,
+    "id": "testmod:bronze_ingot"
+  }
+}

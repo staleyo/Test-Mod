@@ -9,6 +9,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+
+    public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
+
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
     public static final Item NICKEL_INGOT = registerItem("nickel_ingot", new Item(new Item.Settings()));
@@ -30,6 +33,9 @@ public class ModItems {
 
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+
+            fabricItemGroupEntries.add(BRONZE_INGOT);
+
             fabricItemGroupEntries.add(TIN_INGOT);
             fabricItemGroupEntries.add(RAW_TIN);
             fabricItemGroupEntries.add(NICKEL_INGOT);
