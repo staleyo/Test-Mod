@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:lithium_ore",
+    "testmod:deepslate_lithium_ore"
+  ]
+}

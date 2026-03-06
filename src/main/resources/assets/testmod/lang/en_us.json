@@ -14,6 +14,8 @@
 
   "block.testmod.tin_ore": "Tin Ore",
   "block.testmod.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.testmod.lithium_ore": "Lithium Ore",
+  "block.testmod.deepslate_lithium_ore": "Deepslate Lithium Ore",
 
   "itemgroup.testmod.test_mod": "Test Mod",
   "itemgroup.testmod.test_mod_ores": "Test Mod Ores"

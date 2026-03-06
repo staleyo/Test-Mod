@@ -36,6 +36,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPLSATE_TIN_ORE);
+                        entries.add(ModBlocks.LITHIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_LITHIUM_ORE);
 
                     }).build());
 

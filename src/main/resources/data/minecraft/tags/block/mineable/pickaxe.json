@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:tin_ore",
+    "testmod:deepslate_tin_ore",
+    "testmod:lithium_ore",
+    "testmod:deepslate_lithium_ore"
+  ]
+}
