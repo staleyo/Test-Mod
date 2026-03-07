@@ -2,6 +2,7 @@ package net.leon.testmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.leon.testmod.TestMod;
+import net.leon.testmod.item.custom.ChiselItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -11,7 +12,6 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
-
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
     public static final Item NICKEL_INGOT = registerItem("nickel_ingot", new Item(new Item.Settings()));
@@ -22,6 +22,8 @@ public class ModItems {
     public static final Item RAW_LEAD = registerItem("raw_lead", new Item(new Item.Settings()));
     public static final Item TUNGSTEN_INGOT = registerItem("tungsten_ingot", new Item(new Item.Settings()));
     public static final Item RAW_TUNGSTEN = registerItem("raw_tungsten", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(64)));
 
 
     private static Item registerItem(String name, Item item) {

@@ -17,6 +17,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.testmod.test_mod"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TIN_BLOCK);
+                        entries.add(ModBlocks.METAL_CASING);
+                        entries.add(ModItems.CHISEL);
 
                     }).build());
 
@@ -29,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPLSATE_TIN_ORE);
                         entries.add(ModBlocks.LITHIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_LITHIUM_ORE);
+
 
                         entries.add(ModItems.BRONZE_INGOT);
                         entries.add(ModItems.RAW_TIN);

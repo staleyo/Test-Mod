@@ -20,6 +20,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
                             .requiresTool().sounds(BlockSoundGroup.METAL)));
 
+    public static final Block METAL_CASING = registerBlock("metal_casing",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .sounds(BlockSoundGroup.METAL)));
+
 
     public static final Block TIN_ORE = registerBlock("tin_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
@@ -59,6 +63,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.TIN_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.METAL_CASING);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {

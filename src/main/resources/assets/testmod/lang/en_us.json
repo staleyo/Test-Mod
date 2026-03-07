@@ -1,6 +1,5 @@
 {
   "item.testmod.bronze_ingot": "Bronze Ingot",
-
   "item.testmod.raw_tin": "Raw Tin",
   "item.testmod.tin_ingot": "Tin Ingot",
   "item.testmod.raw_nickel": "Raw Nickel",
@@ -12,7 +11,10 @@
   "item.testmod.raw_tungsten": "Raw Tungsten",
   "item.testmod.tungsten_ingot": "Tungsten Ingot",
 
+  "item.testmod.chisel": "Chisel",
+
   "block.testmod.tin_block": "Block of Tin",
+  "block.testmod.metal_casing": "Metal Casing",
   "block.testmod.tin_ore": "Tin Ore",
   "block.testmod.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.testmod.lithium_ore": "Lithium Ore",
