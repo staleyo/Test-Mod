@@ -16,6 +16,11 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+    public static final Block TIN_BLOCK = registerBlock("tin_block",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                            .requiresTool().sounds(BlockSoundGroup.METAL)));
+
+
     public static final Block TIN_ORE = registerBlock("tin_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f)
@@ -37,6 +42,8 @@ public class ModBlocks {
                             .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(TestMod.MOD_ID, name), block);
@@ -50,9 +57,15 @@ public class ModBlocks {
     public static void registerModBlocks() {
         TestMod.LOGGER.info("Registering mod blocks for " + TestMod.MOD_ID);
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.TIN_BLOCK);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.TIN_ORE);
             fabricItemGroupEntries.add(ModBlocks.DEEPLSATE_TIN_ORE);
+
+
         });
     }
 }
